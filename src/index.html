@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="packt">
+<head>
+  <meta charset="UTF-8">
+  <title>Packt</title>
+  <link rel="stylesheet" href="styles/app.css">
+  <!--<script-->
+      <!--src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js"-->
+      <!--data-apikey="602a4bb07f8d78e178078da786ec80a1">-->
+  <!--</script>-->
+</head>
+<body>
+
+  <ui-view></ui-view>
+
+  <!-- build:vendor -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:source -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/constants/animals-collection.js"></script>
+  <script src="scripts/constants/terrains-collection.js"></script>
+  <script src="scripts/controllers/arena.js"></script>
+  <script src="scripts/controllers/dashboard.js"></script>
+  <script src="scripts/services/animals.js"></script>
+  <script src="scripts/services/arena.js"></script>
+  <script src="scripts/services/storage.js"></script>
+  <script src="scripts/services/terrains.js"></script>
+  <script src="scripts/directives/animal-card/animal-card.js"></script>
+  <script src="scripts/directives/terrain-card/terrain-card.js"></script>
+  <script src="scripts/directives/animal-grid/animal-grid.js"></script>
+  <!-- endbuild -->
+
+</body>
+</html>

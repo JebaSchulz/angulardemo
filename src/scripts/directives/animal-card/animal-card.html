@@ -1,0 +1,21 @@
+<div class="avatar">
+  <img ng-src="images/{{ animal.id }}.png" class="avatar-image" alt="{{ dashboard.animals.find(animal).name }}"/>
+  <div class="avatar-content">
+    <div class="avatar-title">
+      {{ animal.name }}
+    </div>
+    <div class="avatar-subtitle">
+      {{ animal.scientific }}
+    </div>
+  </div>
+  <ul class="avatar-stats">
+    <li>
+      <span class="stat">{{ animal.stats.ferocity }}</span>
+      <span class="label">ferocity</span>
+    </li>
+    <li>
+      <span class="stat">{{ animal.stats.tenacity }}</span>
+      <span class="label">tenacity</span>
+    </li>
+  </ul>
+</div>
